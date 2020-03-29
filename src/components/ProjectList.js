@@ -15,32 +15,42 @@ const client = contentful.createClient({
 })
 
 class ProjectList extends Component {
-	// _isMounted = false;
-	state = {
-		projects: [],
-		searchString: ''
-	}
-	constructor() {
-		super();
-		this.getProjects();
+	_isMounted = false;
+
+	constructor(props) {
+		super(props);
+		state = {
+			projects: [],
+			searchString: ''
+		}
 	}
 
-	getProjects = () => {
+	componentDidMount(){
+		this._isMounted = true;
 		client.getEntries({
 			content_type: 'project',
 			query: this.state.searchString
 		})
-			.then((response) => {
-				this.setState({
+			.then(response => {
+				if (this._isMounted){
+					this.setState({
 					projects: response.items
 				})
 				console.log(response)
+			}
 			})
 			.catch((error) => {
 				console.log("Error occrued while fetching data")
 				console.log(error)
 			})
+
+			console.log(this.state)
 	}
+
+	componentWillUnmount(){
+		this._isMounted = false
+	}
+
 
 	onSearchInputChange = (event) => {
 		if (event.target.value) {
@@ -54,13 +64,21 @@ class ProjectList extends Component {
 		}
 		this.getProjects()
 	}
+
+	updatetheState(){
+		this.setState({
+			searchString:"eww"
+		})
+	}
+
 	componentWillUnmount() {
 		this._isMounted = false
 	}
 	render() {
 		return (
 			<div>
-				{this.state.projects.length > 0 ? (
+				
+				{this.state.projects ? (
 					<div>
 						<TextField style={{ padding: 24 }}
 							id="searchInput"
@@ -76,7 +94,10 @@ class ProjectList extends Component {
 						</Grid>
 					</div>
 				) : "No project found"
+
+				
 				}
+				
 			</div>
 		)
 	}
