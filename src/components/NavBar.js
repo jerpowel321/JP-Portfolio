@@ -3,25 +3,25 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-import * as Colors from 'material-ui/styles/colors';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
+// import * as Colors from 'material-ui/styles/colors';
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// import getMuiTheme from 'material-ui/styles/getMuiTheme';
 // import TextField from 'material-ui/TextField';
 // const black = {backgroundColor: grey[900]};
 
-const muiTheme = getMuiTheme({
-    palette: {
-      textColor: Colors.darkBlack,
-      primary1Color: Colors.white,
-      primary2Color: Colors.indigo700,
-      accent1Color: Colors.redA200,
-      pickerHeaderColor: Colors.darkBlack,
-      alternateTextColor: Colors.redA200
-    },
-    appBar: {
-      height: 60,
-    },
-  });
+// const muiTheme = getMuiTheme({
+//     palette: {
+//       textColor: Colors.darkBlack,
+//       primary1Color: Colors.white,
+//       primary2Color: Colors.indigo700,
+//       accent1Color: Colors.redA200,
+//       pickerHeaderColor: Colors.darkBlack,
+//       alternateTextColor: Colors.redA200
+//     },
+//     appBar: {
+//       height: 60,
+//     },
+//   });
 
 const NavBar = () => {
     return(
@@ -32,16 +32,6 @@ const NavBar = () => {
                 </Typography>
             </Toolbar>
         </AppBar>
-//         <MuiThemeProvider muiTheme={muiTheme}>
-//         <AppBar title="My AppBar">
-//        <div>
-//    {/* < TextField hintText = "username" / >
-//     < TextField hintText = "password" / > */}
-
-//     </div>
-
-//         </AppBar>
-//       </MuiThemeProvider>
     )
 }
 
