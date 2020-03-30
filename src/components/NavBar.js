@@ -1,7 +1,7 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+// import Typography from '@material-ui/core/Typography';
 
 import Grid from '@material-ui/core/Grid'
 import grey from '@material-ui/core/colors/grey';
@@ -10,7 +10,7 @@ import pink from '@material-ui/core/colors/pink';
 
 const black = grey[900];
 const white = grey[50];
-const hotpink = pink[600];
+// const hotpink = pink[600];
 
 
 const NavBar = () => {

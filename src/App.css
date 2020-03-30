@@ -48,11 +48,11 @@
 }
 
 i {
-  color: #d81b60;
+  color: black;
 }
 
 i:hover  {
-  color: black;
+  color: #d81b60;;
 }
 
 /* Grow */

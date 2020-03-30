@@ -5,28 +5,7 @@ import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid';
-// import { makeStyles } from '@material-ui/core/styles';
 
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//         maxWidth: 345,
-//     },
-//     media: {
-//         height: 0,
-//         paddingTop: '56.25%', // 16:9
-//     },
-//     expand: {
-//         transform: 'rotate(0deg)',
-//         marginLeft: 'auto',
-//         transition: theme.transitions.create('transform', {
-//             duration: theme.transitions.duration.shortest,
-//         }),
-//     },
-//     expandOpen: {
-//         transform: 'rotate(180deg)',
-//     },
-
-// }));
 
 const Project = (props) => {
 	return (
@@ -62,7 +41,7 @@ const Project = (props) => {
 									<b style={{ display: "block", paddingTop: "5px" }} >Technical Skills: </b>
 									<span style={{ display: "flex", flexWrap: "wrap", margin: "0px" }}>
 										{props.project.fields.skills.map(skill => (
-											<li key={skill}style={{ paddingRight: "15px" }} key={skill}>{skill}</li>
+											<li key={skill} style={{ paddingRight: "15px" }} key={skill}>{skill}</li>
 										))
 										}
 									</span>
