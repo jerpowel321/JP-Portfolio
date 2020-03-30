@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+/* 
+.bg {
+  backgroundImage: url("./images/ny.jpg"),
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat'
+} */
