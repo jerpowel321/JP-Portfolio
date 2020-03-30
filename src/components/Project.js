@@ -3,53 +3,91 @@ import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
-import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
-import Container from '@material-ui/core/Container'
+import Grid from '@material-ui/core/Grid';
+// import { makeStyles } from '@material-ui/core/styles';
+
+// const useStyles = makeStyles((theme) => ({
+//     root: {
+//         maxWidth: 345,
+//     },
+//     media: {
+//         height: 0,
+//         paddingTop: '56.25%', // 16:9
+//     },
+//     expand: {
+//         transform: 'rotate(0deg)',
+//         marginLeft: 'auto',
+//         transition: theme.transitions.create('transform', {
+//             duration: theme.transitions.duration.shortest,
+//         }),
+//     },
+//     expandOpen: {
+//         transform: 'rotate(180deg)',
+//     },
+
+// }));
 
 const Project = (props) => {
-    return (
-        <div >
-            {props.project ? (
-                <Card >
-                    {/* <CardMedia style={{height:0, paddingTop: '56.25%'}}
-                    image={props.project.fields.projectImage.fields.file.url}
-                    title={props.project.fields.title}
-                    /> */}
-                    <CardContent>
-                        <Typography gutterBottom variant="h6" component="h6">
-                            {props.project.fields.name}
-                        </Typography>
-                        <Typography component="p">
-                            {props.project.fields.description}
-                        </Typography>
-                        <Typography variant="p" component="p">
-                            {props.project.fields.skills != "undefined" ? (
-                               
-                                <p> <b style={{ display: "inline", paddingRight: "5px" }}>Skills: </b>
-                                    {props.project.fields.skills.map(skill => (
-                                        <p style={{ display: "inline", paddingRight: "5px" }} key={skill}>{skill}</p>
-                                    ))
-                                    }
-                                </p>
+	return (
+		<div >
+			{props.project ? (
+				<Card style={{ height: "550px" }} >
+					<CardMedia>
+						{props.project.fields.images !== undefined ? (
+							<div style={{ height: "180px", overflow: "hidden" }}>
+								{props.project.fields.images.map(image => (
+									<img key={image.fields.file.title} style={{ width: "100%" }} src={image.fields.file.url} alt={image.fields.file.title} />
+								))
+								}
+							</div>
+						) : null
+						}
+					</CardMedia>
+					<CardContent style={{ paddingBottom: "0px" }}>
+						<div style={{ height: "35px", overflow: "hidden" }}>
+							<Typography gutterBottom variant="h6" component="h6">
+								{props.project.fields.name}
+							</Typography>
+						</div>
+						<div style={{ height: "120px", overflow: "hidden" }}>
+							<Typography component="p">
+								{props.project.fields.description}
+							</Typography>
+						</div>
+					
 
-                            ) : null
-                            }
-                        </Typography>
-                    </CardContent>
-                    <CardActions>
-                        <a href={props.project.fields.githubLink} target="_blank"><i className="fab fa-2x fa-github"></i></a>
-                        {props.project.fields.deployedSite ? (
-                            <a href={props.project.fields.deployedSite}><i className="fas fa-2x fa-rocket"></i></a>) : null
-                        }
-                    </CardActions>
-                    <CardActions>
+							{props.project.fields.skills !== undefined ? (
+									<Typography  style={{ height: "125px", overflow: "hidden" }} variant="body2">	
+									<b style={{ display: "block", paddingTop: "5px" }} >Technical Skills: </b>
+									<span style={{ display: "flex", flexWrap: "wrap", margin: "0px" }}>
+										{props.project.fields.skills.map(skill => (
+											<li key={skill}style={{ paddingRight: "15px" }} key={skill}>{skill}</li>
+										))
+										}
+									</span>
+									</Typography>
+							) : null
+							}
+					
+					</CardContent>
+					<CardActions style={{ display: "flex", padding: "15px" }} >
+						<Grid container justify="center" alignItems="center">
+						<Grid item>
+							
+						<a href={props.project.fields.githubLink} target="_blank" rel="noopener noreferrer"><i style={{ marginRight: "7px" }} className="fab fa-2x fa-github hvr-grow"></i></a>
+						{props.project.fields.deployedSite ? (
+							<a href={props.project.fields.deployedSite} target="_blank" rel="noopener noreferrer"><i style={{ marginRight: "7px" }} className="fas fa-2x fa-rocket hvr-grow"></i></a>) : null
+						}
+						<a ><i style={{ marginRight: "7px" }} className="fas fa-2x fa-plus-circle hvr-grow"></i></a>
+						</Grid>
+						</Grid>
+					</CardActions>
 
-                    </CardActions>
-                </Card>
-            ) : null}
-        </div>
-    )
+				</Card>
+			) : null}
+		</div>
+	)
 }
 
 export default Project
