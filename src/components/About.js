@@ -30,6 +30,15 @@ I'm excited to start my career in tech and learn more about programming! I am a 
 
 Thank you for your time!
 </Typography>
+<div className="sup">
+          <button class="button" >
+            Resume 
+    <div class="button__horizontal"></div>
+            <div class="button__vertical"></div>
+          </button>
+        </div>
+
+
 <a id="values"></a> 
 </div>
 

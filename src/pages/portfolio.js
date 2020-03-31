@@ -7,23 +7,20 @@ import Footer from "../components/Footer"
 // const black = grey[900];
 
 class Portfolio extends Component {
-  
-  
+
+
   render() {
     return (
       <div>
-          <NavBar />
-          {/* <div style={{backgroundColor: black}} > */}
-          <div className="bg"></div>
-          <Container maxWidth="lg">
+        <NavBar />
+        {/* <div style={{backgroundColor: black}} > */}
+        <div className="bg"></div>
+        <Container maxWidth="lg" style={{ backgroundColor: "white" }}>
           <div className="projectArea">
-          <ProjectList />
+            <ProjectList />
           </div>
- 
-          </Container>
-        
-          {/* </div> */}
-          <Footer />
+        </Container>
+        <Footer />
       </div >
     );
   }
