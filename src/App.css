@@ -146,20 +146,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100px;
   background: #212121;
   
 }
 
 
 .buttonFancy {
-    
   display: flex;
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
   background: #fcf3ec;
-  
 }
  .button {
   --offset: 10px;
