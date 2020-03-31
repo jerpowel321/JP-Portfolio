@@ -7,8 +7,6 @@ import { createClient } from "contentful";
 import SearchIcon from '@material-ui/icons/Search';
 
 
-
-
 const SPACE_ID = 'vhqqfqor19w8';
 const ACCESS_TOKEN = 'M_1QrEX-9hG9P5CL65RKxRmqQRIgyaU2KXtmFHEDFIc';
 
@@ -25,15 +23,12 @@ class App extends Component {
 			projects: []
 		};
 	}
-
-	
 	componentDidMount() {
 		client.getEntries().then(({ items }) => {
 			this.setState({ projects: items });
 			console.log(this.state.projects)
 		});
 	}
-
 	getProjects() {
 		client.getEntries({
 			content_type: 'project',
@@ -49,10 +44,7 @@ class App extends Component {
 				console.log("Error occrued while fetching data")
 				console.log(error)
 			})
-
 	}
-
-
 	onSearchInputChange = (event) => {
 		if (event.target.value) {
 			this.setState({
@@ -65,13 +57,10 @@ class App extends Component {
 		}
 		this.getProjects()
 	}
-
 	onClick(key) {
 		console.log(key);
 	}
-
 	render() {
-
 		return (
 			<div style={{ paddingBottom: "50px" }}>
 
@@ -96,11 +85,7 @@ class App extends Component {
 				) : "No project found"
 				}
 			</div>
-
-
-
 		)
-
 	}
 }
 

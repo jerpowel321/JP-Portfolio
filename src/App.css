@@ -139,24 +139,22 @@ body {
   border-bottom: 3px solid #fafafa;
 
 }
-
+#about{
+  min-height: calc(100vh - 117px);
+}
 
 .sup {
-    
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
   background: #212121;
-  
+  padding: 50px;
 }
-
 
 .buttonFancy {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
   background: #fcf3ec;
 }
  .button {

@@ -46,11 +46,9 @@ class Values extends Component {
 									description="I believe we win as a team. I'm a team player who always wants to lend a helping hand and share knowledge." />
 							</Grid>
 						</Grid>
-			
 					</Container>
 					<a id="skills"></a> 
 				</div>
-
 				<div align="center" className="d" style={{ marginBottom: "40px" }} >
 					<i className="fas fa-2x fa-tools" style={{ marginRight: "5px", color: black }}></i>
 					<Typography variant="h4" className="ib" style={{ color: black }}>
@@ -94,9 +92,7 @@ class Values extends Component {
 					</Grid>
 				</Container>
 			</div>
-
 		)
-
 	}
 }
 

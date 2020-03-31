@@ -21,7 +21,7 @@ class AboutPage extends Component {
 		return (
 			<div id="aboutPage">
 				<NavBar />
-				<div align="center" style={{ backgroundColor: black, paddingTop: "40px", margin: "0px" }}>
+				<div id="about" align="center" style={{ backgroundColor: black, paddingTop: "40px", margin: "0px" }}>
 					<img display="block" width="200px" src="/images/me.jpeg" alt="My Portrait"></img>
 					<About />
 				</div>
@@ -101,7 +101,6 @@ class AboutPage extends Component {
 						</Grid>
 					</Container>
 				</div>
-
 				<div id="secondgradient"></div>
 				<div id="chartArea" style={{ backgroundColor: white}}>
 				<Container style={{ display: "flex", justifyContent: "center" , backgroundColor: white}}>

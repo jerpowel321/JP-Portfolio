@@ -8,19 +8,15 @@ import 'typeface-roboto';
 const white = grey[50];
 
 class About extends Component {
-	
 	render() {
-
 		return (
-			<Container>
+			<Container >
 <div className="l" style={{color: white, paddingTop: "20px", paddingBottom: "20px"}}>
 <Typography id="underlineText" variant="h4" align="center"  className="ib">
   About
 </Typography>
 <Typography align="left" variant="body1" style={{padding: "10px"}}>
-My name is Jennifer Powell and I am a Full Stack Developer.
-
-My background is in accounting where I have worked for the past 4 years in the bay area. I have worked at one of the Big Four Firms and am CPA licensed. Recently, I decided to pursue a career in tech. This change came from the realization that I wanted to work in a more creative environment and my desire to code only grew stronger with time, ever since I took my first coding course at UC Santa Cruz.
+My name is Jennifer Powell and I am a Full Stack Developer. My background is in accounting where I have worked for the past 4 years in the bay area. I have worked at one of the Big Four Firms and am CPA licensed. Recently, I decided to pursue a career in tech. This change came from the realization that I wanted to work in a more creative environment and my desire to code only grew stronger with time, ever since I took my first coding course at UC Santa Cruz.
 
 Recently, I completed UC Berkeley’s 12 week full-time immersive full-stack Web Development Coding Bootcamp. The course involves 600+ hours of in and out of class learning and project work using HTML/CSS/JavaScript, jQuery, Git, deployment across static and dynamic sites, Node, Express, React, Firebase, MongoDB, MySQL, and computer science fundamentals.
 
@@ -30,11 +26,11 @@ I'm excited to start my career in tech and learn more about programming! I am a 
 
 Thank you for your time!
 </Typography>
-<div className="sup">
-          <button class="button" >
+<div className="sup" >
+          <button className="button" >
             Resume 
-    <div class="button__horizontal"></div>
-            <div class="button__vertical"></div>
+    <div className="button__horizontal"></div>
+            <div className="button__vertical"></div>
           </button>
         </div>
 

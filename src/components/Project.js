@@ -47,9 +47,6 @@ const Project = (props) => {
 							</Typography>
 						) : null
 						}
-
-
-
 					</CardContent>
 					<CardActions style={{ display: "flex", padding: "15px" }} >
 						<Grid container justify="center" alignItems="center">
