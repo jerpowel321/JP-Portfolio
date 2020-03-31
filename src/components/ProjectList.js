@@ -7,6 +7,8 @@ import { createClient } from "contentful";
 import SearchIcon from '@material-ui/icons/Search';
 
 
+
+
 const SPACE_ID = 'vhqqfqor19w8';
 const ACCESS_TOKEN = 'M_1QrEX-9hG9P5CL65RKxRmqQRIgyaU2KXtmFHEDFIc';
 
@@ -24,6 +26,7 @@ class App extends Component {
 		};
 	}
 
+	
 	componentDidMount() {
 		client.getEntries().then(({ items }) => {
 			this.setState({ projects: items });
@@ -63,10 +66,14 @@ class App extends Component {
 		this.getProjects()
 	}
 
+	onClick(key) {
+		console.log(key);
+	}
+
 	render() {
 
 		return (
-			<div style={{paddingBottom: "50px"}}>
+			<div style={{ paddingBottom: "50px" }}>
 
 				{this.state.projects ? (
 					<div>
@@ -81,7 +88,7 @@ class App extends Component {
 						<Grid container spacing={10} style={{ padding: 24 }}>
 							{this.state.projects.map(project => (
 								<Grid key={project.fields.name} item xs={12} sm={6} lg={4} xl={3}>
-									<Project project={project} />
+									<Project project={project} onClick={this.onClick.bind(this)} />
 								</Grid>
 							))}
 						</Grid>

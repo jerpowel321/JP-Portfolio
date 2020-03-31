@@ -8,10 +8,11 @@ import Grid from '@material-ui/core/Grid';
 
 
 const Project = (props) => {
+
 	return (
 		<div >
 			{props.project ? (
-				<Card style={{ height: "550px" }} >
+				<Card id={props.project.fields.name} style={{ height: "550px" }} >
 					<CardMedia>
 						{props.project.fields.images !== undefined ? (
 							<div style={{ height: "180px", overflow: "hidden" }}>
@@ -34,32 +35,32 @@ const Project = (props) => {
 								{props.project.fields.description}
 							</Typography>
 						</div>
-					
+						{props.project.fields.skills !== undefined ? (
+							<Typography style={{ height: "125px", overflow: "hidden" }} variant="body2">
+								<b style={{ display: "block", paddingTop: "5px" }} >Technical Skills: </b>
+								<span style={{ display: "flex", flexWrap: "wrap", margin: "0px" }}>
+									{props.project.fields.skills.map(skill => (
+										<li key={skill} style={{ paddingRight: "15px" }} key={skill}>{skill}</li>
+									))
+									}
+								</span>
+							</Typography>
+						) : null
+						}
 
-							{props.project.fields.skills !== undefined ? (
-									<Typography  style={{ height: "125px", overflow: "hidden" }} variant="body2">	
-									<b style={{ display: "block", paddingTop: "5px" }} >Technical Skills: </b>
-									<span style={{ display: "flex", flexWrap: "wrap", margin: "0px" }}>
-										{props.project.fields.skills.map(skill => (
-											<li key={skill} style={{ paddingRight: "15px" }} key={skill}>{skill}</li>
-										))
-										}
-									</span>
-									</Typography>
-							) : null
-							}
-					
+
+
 					</CardContent>
 					<CardActions style={{ display: "flex", padding: "15px" }} >
 						<Grid container justify="center" alignItems="center">
-						<Grid item>
-							
-						<a href={props.project.fields.githubLink} target="_blank" rel="noopener noreferrer"><i style={{ marginRight: "7px" }} className="fab fa-2x fa-github hvr-grow"></i></a>
-						{props.project.fields.deployedSite ? (
-							<a href={props.project.fields.deployedSite} target="_blank" rel="noopener noreferrer"><i style={{ marginRight: "7px" }} className="fas fa-2x fa-rocket hvr-grow"></i></a>) : null
-						}
-						<a ><i style={{ marginRight: "7px" }} className="fas fa-2x fa-plus-circle hvr-grow"></i></a>
-						</Grid>
+							<Grid item>
+
+								<a href={props.project.fields.githubLink} target="_blank" rel="noopener noreferrer"><i style={{ marginRight: "7px" }} className="fab fa-2x fa-github hvr-grow"></i></a>
+								{props.project.fields.deployedSite ? (
+									<a href={props.project.fields.deployedSite} target="_blank" rel="noopener noreferrer"><i style={{ marginRight: "7px" }} className="fas fa-2x fa-rocket hvr-grow"></i></a>) : null
+								}
+								{/* <a ><i style={{ marginRight: "7px" }} className="fas fa-2x fa-plus-circle hvr-grow"></i></a> */}
+							</Grid>
 						</Grid>
 					</CardActions>
 

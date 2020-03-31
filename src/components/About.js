@@ -13,11 +13,11 @@ class About extends Component {
 
 		return (
 			<Container>
-<div style={{color: white, paddingTop: "20px", paddingBottom: "20px"}}>
-<Typography variant="h4" >
-  About Me
+<div className="l" style={{color: white, paddingTop: "20px", paddingBottom: "20px"}}>
+<Typography id="underlineText" variant="h4" align="center"  className="ib">
+  About
 </Typography>
-<Typography variant="body1" >
+<Typography align="left" variant="body1" style={{padding: "10px"}}>
 My name is Jennifer Powell and I am a Full Stack Developer.
 
 My background is in accounting where I have worked for the past 4 years in the bay area. I have worked at one of the Big Four Firms and am CPA licensed. Recently, I decided to pursue a career in tech. This change came from the realization that I wanted to work in a more creative environment and my desire to code only grew stronger with time, ever since I took my first coding course at UC Santa Cruz.
@@ -30,7 +30,9 @@ I'm excited to start my career in tech and learn more about programming! I am a 
 
 Thank you for your time!
 </Typography>
+<a id="values"></a> 
 </div>
+
 </Container>
 
 

@@ -11,7 +11,13 @@ const Footer = () => {
                <a href="https://github.com/jerpowel321" target="_blank" rel="noopener noreferrer"><i className="fab fa-2x fa-github hvr-grow" style={{color: white, paddingRight: "10px", paddingTop: "30px"}}></i></a> 
                 <a href="https://www.linkedin.com/in/jenniferrpowell/" target="_blank" rel="noopener noreferrer"><i className="fab fa-2x fa-linkedin hvr-grow"style={{color: white, paddingRight: "10px", paddingTop: "30px"}}></i></a>
                 <a href="https://www.dropbox.com/s/p4cxz05omtwpikc/JenniferPowell_Resume.pdf?dl=0" target="_blank" rel="noopener noreferrer"><i className="fas fa-file-pdf fa-2x ml hvr-grow nml" style={{color:white, paddingRight: "10px", paddingTop: "30px"}}></i></a>
-                <a href="https://twitter.com/Jennpowpow" target="_blank" rel="noopener noreferrer"><i class="fab fa-2x fa-twitter hvr-grow" style={{color: white, paddingRight: "10px", paddingTop: "30px"}}></i></a>
+                <a href="https://twitter.com/Jennpowpow" target="_blank" rel="noopener noreferrer"><i className="fab fa-2x fa-twitter hvr-grow" style={{color: white, paddingRight: "10px", paddingTop: "30px"}}></i></a>
+                <a href="https://www.instagram.com/jennpowell321/" target="_blank" rel="noopener noreferrer"><i className="fab fa-2x  fa-instagram  hvr-grow" style={{color: white, paddingRight: "10px", paddingTop: "30px"}}></i></a>
+                <a href="https://angel.co/jennifer-powell-10" target="_blank" rel="noopener noreferrer"><i className="fab fa-angellist fa-2x hvr-grow" style={{color: white, paddingRight: "10px", paddingTop: "30px"}}></i></a>
+                <a href="https://jennpowell.yelp.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-yelp fa-2x hvr-grow" style={{color: white, paddingRight: "10px", paddingTop: "30px"}}></i></a>
+                <a href="https://medium.com/@jerpowel321" target="_blank" rel="noopener noreferrer"><i className="fab fa-medium fa-2x hvr-grow" style={{color: white, paddingRight: "10px", paddingTop: "30px"}}></i></a>
+
+              
         </BottomNavigation>
     )
 }

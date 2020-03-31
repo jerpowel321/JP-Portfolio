@@ -78,3 +78,103 @@ body {
 .projectArea {
   min-height: 100vh;
 }
+
+/** Hover-related CSS **/
+.l > h4, .l > h1 {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.l > h4:hover, .l > h1:hover {
+  color: white;
+}
+
+.l > h4:before, .l > h1:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.l > h4:hover:before, .l > h1:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.d > h4, .d> h1 {
+  position: relative;
+  color: #212121;
+  text-decoration: none;
+}
+
+.d > h4:hover , .d> h1:hover {
+  color: #212121;
+}
+
+.d > h4:before, .d> h1:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #212121;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.d > h4:hover:before, .d> h1:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.achomplishmentSection  {
+  padding-top: 20px;
+  background-color: #212121;
+}
+#firstgradient {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 100vw 0 0;
+  border-color: #fafafa #212121  transparent transparent;
+  transform: scale(1.0001);
+}
+#secondgradient {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 100vw 0 0;
+  border-color: #212121 #fafafa transparent transparent;
+  transform: scale(1.0001);
+}
+.ib {
+  display: inline-block
+}
+#chartArea {
+  padding-bottom: 50px;
+}
+#nav a {
+  text-decoration: none;
+  padding-bottom: 7px;
+
+}
+#navigation a:hover {
+  border-bottom: 3px solid white;
+
+}
