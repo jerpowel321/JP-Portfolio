@@ -41,7 +41,7 @@ class AboutPage extends Component {
 										<Achievement
 											txtcolor={white}
 											bgcolor={black}
-											label="Collage Graduate"
+											label="College Graduate"
 											icon="fas fa-2x fa-graduation-cap"
 											description="Graduated from UC Santa Cruz a year early and received cum laude distinction."
 										/>
