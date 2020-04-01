@@ -40,7 +40,7 @@ const Project = (props) => {
 								<b style={{ display: "block", paddingTop: "5px" }} >Technical Skills: </b>
 								<span style={{ display: "flex", flexWrap: "wrap", margin: "0px" }}>
 									{props.project.fields.skills.map(skill => (
-										<li key={skill} style={{ paddingRight: "15px" }} key={skill}>{skill}</li>
+										<li key={skill} style={{ paddingRight: "15px" }} >{skill}</li>
 									))
 									}
 								</span>

@@ -5,8 +5,8 @@ import TextField from '@material-ui/core/TextField'
 import Project from '../components/Project'
 import { createClient } from "contentful";
 import SearchIcon from '@material-ui/icons/Search';
-import grey from '@material-ui/core/colors/grey';
-const white = grey[50];
+// import grey from '@material-ui/core/colors/grey';
+// const white = grey[50];
 
 
 
@@ -29,7 +29,7 @@ class App extends Component {
 	componentDidMount() {
 		client.getEntries().then(({ items }) => {
 			this.setState({ projects: items });
-			console.log(this.state.projects)
+			// console.log(this.state.projects)
 		});
 	}
 	getProjects() {
@@ -41,7 +41,7 @@ class App extends Component {
 				this.setState({
 					projects: response.items
 				})
-				console.log(response)
+				// console.log(response)
 			})
 			.catch((error) => {
 				console.log("Error occrued while fetching data")

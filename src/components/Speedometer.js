@@ -9,7 +9,7 @@ export default class Speedometer extends React.Component {
 		return (
 			<div align="center" >
 			
-				          <h3 align="center" style={{paddingBottom:"50px"}}>	<i class="far fa-1x fa-clock" style={{paddingRight: "5px"}}></i>What I enjoy doing in my spare time.</h3>
+				          <h3 align="center" style={{paddingBottom:"50px"}}>	<i className="far fa-1x fa-clock" style={{paddingRight: "5px"}}></i>What I enjoy doing in my spare time.</h3>
 				<ReactSpeedometer
 					width={380}
 					needleHeightRatio={0.7}

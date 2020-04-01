@@ -22,8 +22,8 @@ class AboutPage extends Component {
 			<div id="aboutPage">
 				<NavBar />
 				<div id="about" align="center" style={{ backgroundColor: black, paddingTop: "60px", margin: "0px" }}>
-					<div class="circular--landscape">
-						<img src="/images/me.jpeg" />
+					<div className="circular--landscape">
+						<img src="/images/me.jpeg" alt="Me"/>
 					</div>
 					<About />
 				</div>

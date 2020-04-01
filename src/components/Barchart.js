@@ -44,7 +44,7 @@ export default class Barchart extends React.Component {
     return (
       <Container maxWidth="sm" align="center">
         <div>
-          <h3><i class="fas fa-laptop" style={{paddingRight: "5px"}}></i>Full Stack Web Development</h3>
+          <h3><i className="fas fa-laptop" style={{paddingRight: "5px"}}></i>Full Stack Web Development</h3>
           <HorizontalBar data={data} options={options} />
         </div>
       </Container>

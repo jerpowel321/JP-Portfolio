@@ -8,22 +8,18 @@
   display: fixed;
   border-bottom: 20px solid black;
 }
-
-/* .blackbg {
-  background-Image: url("/images/black4.jpeg");
-  background-attachment: fixed;
-  background-color: #212121;
-} */
-#menu {
-  visibility: hidden;}
 #name {
   font-weight: 300; 
   font-size: 20px;
   padding-top: "5px";
 }
-#menu li {
+#menu {
   visibility: hidden;
 }
+#littleMenu {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 1000px) {
   #menu {
     padding-right: 12px;
@@ -33,10 +29,29 @@
   #navigation a{
   display: none  
   }
-  .menu:active {
-
+  #menu:active {
+  display: block;  
+  color: yellow;
   }
-  
+  #littleMenu {
+    visibility: visible;
+    display: block;
+    padding-top: 20px;
+  }
+  #littleMenu a{
+    display: block;
+    padding-bottom: 20px
+  }
+  #littleMenu a span{
+  padding: 7px;
+  font-size: 20px;
+  }
+/* 
+  #skills, #values {
+    padding-top: 220px;
+    margin-top: -220px;
+  } */
+
 }
 @media only screen and (max-width: 425px) {
   #name {
