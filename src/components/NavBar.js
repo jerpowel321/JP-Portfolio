@@ -18,9 +18,11 @@ const NavBar = () => {
         <Grid container >
           <Grid item xs={6}>
             <Grid id="navigation" container justify="flex-start" style={{ fontWeight: "bold" }}>
-              <p id="name" style={{ paddingRight: "30px", fontFamily: "Lato, sans-serif", color: "#FFFFFF" }}>
+              <div id="name" >
+              <p style={{ paddingRight: "30px", fontFamily: "Lato, sans-serif", color: "#FFFFFF" }}>
                 Jennifer Powell
               </p>
+              </div>
               <Grid item style={{ paddingTop: "30px", paddingRight: "20px", color: white }}>
                 <a style={{ color: white }} href="/about" rel="noopener noreferrer">About</a>
               </Grid>

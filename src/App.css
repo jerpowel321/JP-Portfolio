@@ -8,10 +8,10 @@
   display: fixed;
   border-bottom: 20px solid black;
 }
-#name {
+
+#name p {
   font-weight: 300; 
-  font-size: 20px;
-  padding-top: "5px";
+  font-size: 25px;
 }
 #menu {
   visibility: hidden;
@@ -21,6 +21,11 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  #name p {
+    padding-top: 7px;
+    font-weight: 300; 
+    font-size: 20px;
+  }
   #menu {
     padding-right: 12px;
     padding-top: 20px;
