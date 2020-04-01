@@ -8,42 +8,33 @@ import 'typeface-roboto';
 const white = grey[50];
 
 class About extends Component {
-	render() {
-		return (
-			<Container >
-<div className="l" style={{color: white, paddingTop: "20px", paddingBottom: "20px"}}>
-<Typography id="underlineText" variant="h4" align="center"  className="ib">
-  About
+    render() {
+        return (
+            <Container maxWidth='md'>
+                <div className="l" style={{ color: white, paddingTop: "50px", paddingBottom: "20px" }}>
+                    <Typography id="underlineText" variant="h4" align="center" className="ib">
+                        About
 </Typography>
-<Typography align="left" variant="body1" style={{padding: "10px"}}>
-My name is Jennifer Powell and I am a Full Stack Developer. My background is in accounting where I have worked for the past 4 years in the bay area. I have worked at one of the Big Four Firms and am CPA licensed. Recently, I decided to pursue a career in tech. This change came from the realization that I wanted to work in a more creative environment and my desire to code only grew stronger with time, ever since I took my first coding course at UC Santa Cruz.
-
-Recently, I completed UC Berkeley’s 12 week full-time immersive full-stack Web Development Coding Bootcamp. The course involves 600+ hours of in and out of class learning and project work using HTML/CSS/JavaScript, jQuery, Git, deployment across static and dynamic sites, Node, Express, React, Firebase, MongoDB, MySQL, and computer science fundamentals.
-
-This bootcamp ignited my passion for programming. I love expanding and utilizing my knowledge base through building quality websites and applications. My curiosity to learn has enabled me to tackle challenges head on and identify problems before they become larger issues.
-
-I'm excited to start my career in tech and learn more about programming! I am a positive and driven person who enjoys working collaboratively and excels in a fast pace environment. I'm looking for opportunities to grow my career where I can apply my skills.
-
-Thank you for your time!
+                    <Typography align="left" variant="body1" style={{ padding: "10px" }}>
+                        Jennifer Powell is a Frontend Engineer passionate about collaboration and providing client experiences. After graduating Cum Laude at UC Santa Cruz (Bachelor of Business Management Economics), Jennifer obtained her CPA license and practiced as a Senior Tax Consultant at multiple firms including Deloitte. Seeking a change in career to follow her interests, she completed a 12 week Full Stack Web Development bootcamp course at UC Berkeley. She has experience working with technologies including React, Node as well as MongoDB and MySQL. Jennifer is a continuous learner who’s looking for opportunities to further develop her professional skills at a company making a positive social impact.
 </Typography>
-<div className="sup" >
-          <button className="button" >
-            Resume 
-    <div className="button__horizontal"></div>
-            <div className="button__vertical"></div>
-          </button>
-        </div>
+                    <a href="https://www.dropbox.com/s/agp3gyvyaouykrs/JP_Resume.pdf?dl=0" alt="My Resume" rel="noopener" target="_blank">
+                        <div className="buttonContainer" >
+                            <button className="button" >
+                                Resume
+                                <div className="button__horizontal"></div>
+                                <div className="button__vertical"></div>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+
+            </Container>
 
 
-<a id="values"></a> 
-</div>
+        )
 
-</Container>
-
-
-		)
-
-	}
+    }
 }
 
 export default About

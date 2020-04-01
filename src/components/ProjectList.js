@@ -5,6 +5,9 @@ import TextField from '@material-ui/core/TextField'
 import Project from '../components/Project'
 import { createClient } from "contentful";
 import SearchIcon from '@material-ui/icons/Search';
+import grey from '@material-ui/core/colors/grey';
+const white = grey[50];
+
 
 
 const SPACE_ID = 'vhqqfqor19w8';
@@ -67,10 +70,10 @@ class App extends Component {
 				{this.state.projects ? (
 					<div>
 						<div>
-							<SearchIcon style={{ paddingTop: 40 }} />
-							<TextField style={{ padding: 24 }}
+							<SearchIcon style={{ paddingTop: 40, }} />
+							<TextField style={{ padding: 24,}}
 								id="searchInput"
-								placeholder="Search for Skills"
+								placeholder="Search for skills"
 								margin="normal"
 								onChange={this.onSearchInputChange} />
 						</div>

@@ -42,9 +42,9 @@ const options = {
 export default class Barchart extends React.Component {
   render() {
     return (
-      <Container maxWidth="sm">
+      <Container maxWidth="sm" align="center">
         <div>
-          <h3>Full Stack Web Development</h3>
+          <h3><i class="fas fa-laptop" style={{paddingRight: "5px"}}></i>Full Stack Web Development</h3>
           <HorizontalBar data={data} options={options} />
         </div>
       </Container>

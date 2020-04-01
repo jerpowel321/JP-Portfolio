@@ -13,11 +13,12 @@ class Values extends Component {
 
 	render() {
 		return (
-			<div id="summarySkills " style={{ backgroundColor: white }}>	
+			<div id="summarySkills " style={{ backgroundColor: white }}>
 				<div style={{ padding: "40px" }}>
 					<div className="d" align="center" >
 						<i className=" fa-2x far fa-gem" style={{ paddingRight: "3px" }}></i>
-						<h1 className="ib" align="center">  Values</h1>
+						<h1 className="ib" align="center">
+							<a id="values">Values</a> </h1>
 					</div>
 					<Container style={{ display: "flex", justifyContent: "center" }}>
 						<Grid container justify="center" style={{ display: "flex" }}>
@@ -47,12 +48,11 @@ class Values extends Component {
 							</Grid>
 						</Grid>
 					</Container>
-					<a id="skills"></a> 
 				</div>
 				<div align="center" className="d" style={{ marginBottom: "40px" }} >
 					<i className="fas fa-2x fa-tools" style={{ marginRight: "5px", color: black }}></i>
 					<Typography variant="h4" className="ib" style={{ color: black }}>
-						Core Skills
+						<a id="skills" >	Core Skills	</a>
 					</Typography>
 				</div>
 				<Container style={{ display: "flex", justifyContent: "center" }}>
@@ -83,7 +83,7 @@ class Values extends Component {
 						</Grid>
 						<Grid item xs={12} sm={6} md={4} lg={3}>
 							<Achievement
-								icon="fas fa-3x fa-phone"
+								icon="fas fa-3x fa-headset"
 								txtcolor={black}
 								bgcolor={white}
 								label="Client First"
