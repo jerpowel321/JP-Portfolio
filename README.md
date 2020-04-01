@@ -3,11 +3,11 @@
 
 #### Projects
 ###### This page displays projects I've worked on and technologies I've used during and after completion of UC Berkeley's Full Stack Web Development Coding Bootcamp. Type in a skill such as `react` in the search bar and watch projects which are built with react display on the screen. See demo below.  
-![Project Page](https://media.giphy.com/media/UWszXSxB0Hxw8FiD8C/giphy.gif)
+![Project Page](https://media.giphy.com/media/UWszXSxB0Hxw8FiD8C/giphy.gif | width=100)
 
 #### About
 ###### This page displays information about myself, such as my background, values, skills, and hobbies. 
-![About Page](https://media.giphy.com/media/S4Go3Q8PDfqzOQHNbJ/giphy.gif)
+![About Page](https://media.giphy.com/media/S4Go3Q8PDfqzOQHNbJ/giphy.gif | width=100)
 
 
 ## 🔑 How to Run the App
