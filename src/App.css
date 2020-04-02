@@ -42,13 +42,16 @@
   }
   #littleMenu a{
     display: block;
-    padding-bottom: 20px
-  }
-  #littleMenu a span{
-  padding: 7px;
-  font-size: 20px;
-  }
+    padding-bottom: 20px;
+    font-size: 20px;
 
+  }
+ 
+  #littleMenu a:hover {
+    border-bottom: 1px solid #fafafa;
+    display: inline-block;
+  
+  }
 
 }
 @media only screen and (max-width: 425px) {
@@ -125,6 +128,7 @@ i:hover  {
   border-bottom: 3px solid #fafafa;
 
 }
+
 #about{
   min-height: calc(100vh - 117px);
 }

@@ -3,7 +3,7 @@ import Card from '@material-ui/core/Card'
 import Typography from '@material-ui/core/Typography'
 import CardContent from '@material-ui/core/CardContent';
 
-const Project = (props) => {
+const Cards = (props) => {
   return (
     <Card style={{ boxShadow: "none", backgroundColor: props.bgcolor, color: props.txtcolor }}>
       <CardContent>
@@ -19,4 +19,4 @@ const Project = (props) => {
   )
 }
 
-export default Project
+export default Cards

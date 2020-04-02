@@ -31,7 +31,7 @@ const Footer = () => {
 	const classes = useStyles();
 	return (
 		<BottomNavigation className={classes.root}>
-			<a href="httCoffee.com/jerpowel321" target="_blank" rel="noopener noreferrer" className="hvr-grow">
+			<a href="https://github.com/jerpowel321" target="_blank" rel="noopener noreferrer" className="hvr-grow">
 				<FontAwesomeIcon className={classes.i} icon={faGithub} size = '2x'/>
 			</a>
 			<a href="https://www.linkedin.com/in/jenniferrpowell/" target="_blank" rel="noopener noreferrer" className="hvr-grow">

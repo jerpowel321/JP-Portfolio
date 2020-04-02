@@ -5,8 +5,6 @@ import TextField from '@material-ui/core/TextField'
 import Project from '../components/Project'
 import { createClient } from "contentful";
 import SearchIcon from '@material-ui/icons/Search';
-// import grey from '@material-ui/core/colors/grey';
-// const white = grey[50];
 
 
 

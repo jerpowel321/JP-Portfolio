@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import grey from '@material-ui/core/colors/grey';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container'
-import Achievement from './Achievements'
+import Card from './Cards'
 import Grid from '@material-ui/core/Grid'
 import 'typeface-roboto';
 
@@ -23,7 +23,7 @@ class Values extends Component {
 					<Container style={{ display: "flex", justifyContent: "center" }}>
 						<Grid container justify="center" style={{ display: "flex" }}>
 							<Grid item xs={12} sm={6} md={4} lg={3}>
-								<Achievement
+								<Card
 									icon="fas fa-4x fa-balance-scale"
 									txtcolor={black}
 									bgcolor={white}
@@ -31,7 +31,7 @@ class Values extends Component {
 									description="Have a demonstrated track record of outstanding service; a calm, dependable professional who devotes every effort to achieving the best results." />
 							</Grid>
 							<Grid item xs={12} sm={6} md={4} lg={3}>
-								<Achievement
+								<Card
 									icon="fas fa-4x fa-seedling"
 									txtcolor={black}
 									bgcolor={white}
@@ -39,7 +39,7 @@ class Values extends Component {
 									description="Always looking to continuously learn and develop my core skills while challenging myself to learn new technologies and development techniques." />
 							</Grid>
 							<Grid item xs={12} sm={6} md={4} lg={3}>
-								<Achievement
+								<Card
 									icon="fas fa-4x fa-hands-helping"
 									txtcolor={black}
 									bgcolor={white}
@@ -58,7 +58,7 @@ class Values extends Component {
 				<Container style={{ display: "flex", justifyContent: "center" }}>
 					<Grid container justify="center" style={{ display: "flex" }}>
 						<Grid item xs={12} sm={6} md={4} lg={3}>
-							<Achievement
+							<Card
 								icon="fas fa-3x fa-users"
 								txtcolor={black}
 								bgcolor={white}
@@ -66,7 +66,7 @@ class Values extends Component {
 								description="Highly experienced in assessing true needs and expectations building lasting professional relationships. Grow and deepen strategic partnerships to achieve mutually beneficial outcome." />
 						</Grid>
 						<Grid item xs={12} sm={6} md={4} lg={3}>
-							<Achievement
+							<Card
 								icon="fas fa-3x fa-globe"
 								txtcolor={black}
 								bgcolor={white}
@@ -74,7 +74,7 @@ class Values extends Component {
 								description="Possess a proven ability to anticipate unique requirements or potential road-blocks in all situations. Continually develop back-up plans to minimize risk and deliver exceptional results; streamline communication and implementation channels to effectively meet client and organizational needs." />
 						</Grid>
 						<Grid item xs={12} sm={6} md={4} lg={3}>
-							<Achievement
+							<Card
 								icon="fas fa-3x fa-cogs"
 								txtcolor={black}
 								bgcolor={white}
@@ -82,7 +82,7 @@ class Values extends Component {
 								description="Effectively manage diverse tasks, with varying degrees of complexity, within a wide range of environments; evaluate situations, assess emergent needs, and implement solutions in a prompt and efficient/effective manner." />
 						</Grid>
 						<Grid item xs={12} sm={6} md={4} lg={3}>
-							<Achievement
+							<Card
 								icon="fas fa-3x fa-headset"
 								txtcolor={black}
 								bgcolor={white}
