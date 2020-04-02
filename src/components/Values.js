@@ -52,7 +52,7 @@ class Values extends Component {
 				<div align="center" className="d" style={{ marginBottom: "40px" }} >
 					<i className="fas fa-2x fa-tools" style={{ marginRight: "5px", color: black }}></i>
 					<Typography variant="h4" className="ib" style={{ color: black }}>
-						<a id="skills" >	Core Skills	</a>
+						<a id="skills" >Core Skills	</a>
 					</Typography>
 				</div>
 				<Container style={{ display: "flex", justifyContent: "center" }}>
