@@ -12,6 +12,6 @@ const history = useRouterHistory(createHistory)({
 export default <Router history={history} >
   <Route path="/" component={App}>
     <IndexRoute component={Portfolio}/>
-    <Route path="demo" component={About}/>
+    {/* <Route path="/about" component={About}/> */}
   </Route>
 </Router>
