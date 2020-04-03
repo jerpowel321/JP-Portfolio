@@ -15,6 +15,7 @@
     "@testing-library/user-event": "^7.1.2",
     "chart.js": "^2.9.3",
     "contentful": "^7.14.0",
+    "history": "^4.10.1",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
     "react-d3-speedometer": "^0.10.1",
